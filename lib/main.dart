@@ -1,42 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:estore/branding/branding.dart';
 import 'package:estore/components/components.dart';
-import 'package:estore/home_page.dart';
-import 'package:estore/categories_page.dart';
-import 'package:estore/favourites_page.dart';
-import 'package:estore/cart_page.dart';
+import 'package:estore/pages/home_page.dart';
+import 'package:estore/pages/categories_page.dart';
+import 'package:estore/pages/favourites_page.dart';
+import 'package:estore/pages/cart_page.dart';
+//import 'package:estore/pages.dart';
+//import 'package:estore/routes.dart';
 
 void main() => runApp(MyApp());
 
-final List<String> categoryNumbers = [
-  'One',
-  'Two',
-  'Three',
-  'Four',
-  'Five',
-  'Six',
-];
-
 final int numberOfTabs = 4;
-
-final List<Widget> appBarActions = [
-  new IconButton(
-    icon: gradientIcon(
-      Icons.account_circle,
-      25.0,
-      goldenGradient,
-    ),
-    onPressed: () {},
-  ),
-  new IconButton(
-    icon: gradientIcon(
-      Icons.settings,
-      25.0,
-      goldenGradient,
-    ),
-    onPressed: () {},
-  ),
-];
 
 class MyApp extends StatelessWidget {
   @override
@@ -51,9 +25,10 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
         primaryColor: Colors.black54,
-        scaffoldBackgroundColor: Colors.black54,
+        scaffoldBackgroundColor: Colors.blueGrey,
       ),
       home: new MainStore(),
+      //routes: Routes.routes,
     );
   }
 }
@@ -78,7 +53,6 @@ class MainStoreState extends State<MainStore>
   @override
   Widget build(BuildContext context) {
     var deviceOrientation = MediaQuery.of(context).orientation;
-
     if (deviceOrientation == Orientation.portrait) {
       return new DefaultTabController(
         length: numberOfTabs,
@@ -86,7 +60,7 @@ class MainStoreState extends State<MainStore>
         child: new Scaffold(
           appBar: gradientAppBar(
             16.0,
-            'SatyaStores',
+            'StoreShop',
             '.',
             'ONLINE',
             28.0,

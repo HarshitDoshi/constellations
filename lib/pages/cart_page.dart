@@ -18,6 +18,13 @@ Widget cartPageView() {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               new Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black87,
+                    width: 1.0,
+                    style: BorderStyle.solid,
+                  ),
+                ),
                 alignment: Alignment.centerRight,
                 padding: EdgeInsets.all(0.0),
                 margin: EdgeInsets.all(0.0),

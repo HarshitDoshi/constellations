@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:estore/branding/branding.dart';
 
 final List<String> images = [
   'https://via.placeholder.com/400x200',
@@ -6,6 +7,25 @@ final List<String> images = [
   'https://via.placeholder.com/400x200',
   'https://via.placeholder.com/400x200',
   'https://via.placeholder.com/400x200',
+];
+
+final List<Widget> appBarActions = [
+  new IconButton(
+    icon: gradientIcon(
+      Icons.account_circle,
+      25.0,
+      goldenGradient,
+    ),
+    onPressed: () {},
+  ),
+  new IconButton(
+    icon: gradientIcon(
+      Icons.settings,
+      25.0,
+      goldenGradient,
+    ),
+    onPressed: () {},
+  ),
 ];
 
 Widget gradientAppBar(
