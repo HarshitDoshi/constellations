@@ -64,18 +64,29 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.2"
+  flare_dart:
+    dependency: transitive
+    description:
+      path: flare_dart
+      ref: dev
+      resolved-ref: "8fcd773a12c11bbb0b6bec1c8829b7af4d341bae"
+      url: "git://github.com/2d-inc/Flare-Flutter.git"
+    source: git
+    version: "2.2.4"
+  flare_flutter:
+    dependency: "direct main"
+    description:
+      path: flare_flutter
+      ref: dev
+      resolved-ref: "8fcd773a12c11bbb0b6bec1c8829b7af4d341bae"
+      url: "git://github.com/2d-inc/Flare-Flutter.git"
+    source: git
+    version: "1.7.1"
   flutter:
     dependency: "direct main"
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_svg:
-    dependency: "direct main"
-    description:
-      name: flutter_svg
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.14.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -109,20 +120,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.6.4"
-  path_drawing:
-    dependency: transitive
-    description:
-      name: path_drawing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.4.1"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.4"
   pedantic:
     dependency: transitive
     description:
@@ -214,4 +211,3 @@ packages:
     version: "3.5.0"
 sdks:
   dart: ">=2.4.0 <3.0.0"
-  flutter: ">=1.5.9-pre.94 <2.0.0"
