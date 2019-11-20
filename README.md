@@ -1,2 +1,2 @@
 # estore
-an electronic store made using flutter...
+an electronic store
